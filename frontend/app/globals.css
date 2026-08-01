@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  border-color: rgb(51 65 85 / 0.7);
+}
+
+body {
+  min-height: 100vh;
+  color: #e6edf8;
+  background:
+    radial-gradient(circle at 85% 2%, rgb(23 229 190 / 0.08), transparent 23rem),
+    radial-gradient(circle at 12% 35%, rgb(78 111 255 / 0.1), transparent 25rem),
+    #080d19;
+}
+
+::selection {
+  color: #07131a;
+  background: #17e5be;
+}
+
+@layer components {
+  .panel {
+    @apply rounded-2xl border border-slate-700/60 bg-slate-900/60 shadow-glow backdrop-blur-xl;
+  }
+
+  .eyebrow {
+    @apply text-[0.68rem] font-bold uppercase tracking-[0.18em] text-slate-400;
+  }
+}
