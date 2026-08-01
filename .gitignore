@@ -17,6 +17,7 @@ test_factory.db
 node_modules/
 .next/
 out/
+*.tsbuildinfo
 
 # IDE and OS
 .DS_Store
